@@ -10,11 +10,13 @@ public class BirdScript : MonoBehaviour
     public LogicManagerScript Logic;
     public bool isBirdAlive = true;
 
+    //private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         Logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicManagerScript>();
-
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,9 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true && isBirdAlive == true)
         {
             RB.velocity = Vector2.up * flapStrangth;
+            //animator.SetTrigger("Fly");
 
+            //OnFlyClick();
         }
     }
 
@@ -33,6 +37,8 @@ public class BirdScript : MonoBehaviour
         isBirdAlive = false;
     }
 
-
+    //public void OnFlyClick() {
+    //    animator.SetTrigger("Fly");
+    //}
 
 }
