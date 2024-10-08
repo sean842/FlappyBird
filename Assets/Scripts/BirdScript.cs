@@ -6,9 +6,10 @@ public class BirdScript : MonoBehaviour
 {
 
     public Rigidbody2D RB;
-    public float flapStrangth;
+    public float flapStrangth = 10;
     public LogicManagerScript Logic;
     public bool isBirdAlive = true;
+    public float deadZone = -45;
 
     //private Animator animator;
 
@@ -25,10 +26,15 @@ public class BirdScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) == true && isBirdAlive == true)
         {
             RB.velocity = Vector2.up * flapStrangth;
-            //animator.SetTrigger("Fly");
-
-            //OnFlyClick();
         }
+
+        // Destroy the bird when it goes past the deadZone
+        if (transform.position.y < deadZone) {
+            Destroy(gameObject);
+            Logic.GameOver();
+
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

@@ -41,4 +41,10 @@ public class PipeSpawnScript : MonoBehaviour
         Instantiate(Pipe, new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0), transform.rotation);
     }
 
+    // Method to dynamically adjust the spawn rate
+    public void SetSpawnRate(float newRate) {
+        spawnRate = newRate;
+    }
+
+
 }

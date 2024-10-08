@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6878163058483999442}
   - component: {fileID: 689736819006961166}
   - component: {fileID: 4825632612727022711}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Middele
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Logic: {fileID: 0}
-  birdScript: {fileID: 0}
   BoxCollider2D: {fileID: 689736819006961166}
 --- !u!1 &4406860435250835398
 GameObject:
@@ -85,7 +84,7 @@ GameObject:
   - component: {fileID: 4406860435250835397}
   - component: {fileID: 4406860435250835395}
   - component: {fileID: 4406860435250835396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DownPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4406860435471978478}
   - component: {fileID: 4406860435471978477}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +244,7 @@ GameObject:
   - component: {fileID: 4406860435680412794}
   - component: {fileID: 4406860435680412792}
   - component: {fileID: 4406860435680412793}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: TopPipe
   m_TagString: Untagged
   m_Icon: {fileID: 0}

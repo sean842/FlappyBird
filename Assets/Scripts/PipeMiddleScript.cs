@@ -12,19 +12,16 @@ public class PipeMiddleScript : MonoBehaviour
     void Start()
     {
         Logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicManagerScript>();
+        if (Logic != null) {
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 3)
+        if(collision.gameObject.layer == 7)
         {
             Logic.AddScore(1);
-
         }
     }
 
