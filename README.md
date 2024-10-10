@@ -2,6 +2,13 @@
 
 ## Overview
 This project is a Flappy Bird-style game developed using Unity. It features classic Flappy Bird mechanics with an added twist of character selection, allowing players to choose their favorite bird to play with.
+<br>
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/4d4293da-5e29-4548-a99a-b48eb585d895" alt="Alt Text" width="300">
+  <img src="https://github.com/user-attachments/assets/1fd8eff0-bf70-47c4-bd3c-34a630ebfba1" alt="Alt Text" width="300">
+</div>
+
+
 
 ## Features
 - Classic Flappy Bird gameplay
