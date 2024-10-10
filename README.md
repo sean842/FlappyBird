@@ -10,6 +10,7 @@ This project is a Flappy Bird-style game developed using Unity. It features clas
 
 
 
+
 ## Features
 - Classic Flappy Bird gameplay
 - Character selection feature
@@ -24,8 +25,8 @@ This project is a Flappy Bird-style game developed using Unity. It features clas
 5. Try to achieve the highest score possible!
 
 ## Technologies Used
-- Unity Game Engine
-- C# for scripting
+- Unity Game Engine   <img src="https://github.com/user-attachments/assets/dfa4b9cb-83cb-4f6d-8f10-e45606fe9faf" alt="Alt Text" width="25">
+- C# for scripting   <img src="https://github.com/user-attachments/assets/1c94bd95-92f4-41bf-90c3-7024e9287697" alt="Alt Text" width="25">
 - simmer.io for web hosting
 
 ## Installation for Development
@@ -44,6 +45,8 @@ This project was developed as a learning experience, but suggestions and contrib
 
 
 ## Contact
-Sean Bleier - [LinkedIn](https://www.linkedin.com/in/seanbleier/) 
+Sean Bleier:
+[LinkedIn](https://www.linkedin.com/in/seanbleier/) 
 
-Project Link: [Your GitHub Repository URL]
+
+
