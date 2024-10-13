@@ -47,7 +47,7 @@ public class CloudSpwanScript : MonoBehaviour
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
 
-        Vector3 spawnPosition = new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 0);
+        Vector3 spawnPosition = new Vector3(transform.position.x, Random.Range(lowestPoint, highestPoint), 1);
 
         // Instantiate the cloud
         GameObject newCloud = Instantiate(Cloud, spawnPosition, transform.rotation);

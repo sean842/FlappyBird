@@ -11,13 +11,11 @@ public class BirdScript : MonoBehaviour
     public bool isBirdAlive = true;
     public float deadZone = -45;
 
-    //private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         Logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicManagerScript>();
-        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,12 +37,13 @@ public class BirdScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Check if the bird is colliding with the platform before the game starts
+        if (collision.gameObject.CompareTag("Platform") ) {
+            return;
+        }
         Logic.GameOver();
         isBirdAlive = false;
     }
 
-    //public void OnFlyClick() {
-    //    animator.SetTrigger("Fly");
-    //}
 
 }

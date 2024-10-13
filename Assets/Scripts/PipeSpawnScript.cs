@@ -10,10 +10,13 @@ public class PipeSpawnScript : MonoBehaviour
     private float timer = 0;
     public float heightOffset = 10;
 
+    private LogicManagerScript logicManager; // Reference to the LogicManager
     // Start is called before the first frame update
     void Start()
     {
-        SpawnPipe();
+        // Find and store a reference to the LogicManager
+        logicManager = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicManagerScript>();
+        //SpawnPipe();
 
     }
 
@@ -21,16 +24,27 @@ public class PipeSpawnScript : MonoBehaviour
     void Update()
     {
         
-        if (timer < spawnRate)
-        {
-            timer += Time.deltaTime;// count everyframe and will work the same in every computer.
+        //if (timer < spawnRate)
+        //{
+        //    timer += Time.deltaTime;// count everyframe and will work the same in every computer.
+        //}
+        //else
+        //{
+        //    SpawnPipe();
+        //    timer = 0;
+        //}
+
+
+        // Only spawn pipes if the game has started
+        if (logicManager.currentTime == 0) {
+            if (timer < spawnRate) {
+                timer += Time.deltaTime; // count every frame
+            }
+            else {
+                SpawnPipe();
+                timer = 0;
+            }
         }
-        else
-        {
-            SpawnPipe();
-            timer = 0;
-        }
-        
     }
 
     void SpawnPipe()
